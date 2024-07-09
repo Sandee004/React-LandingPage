@@ -17,7 +17,7 @@ const Navbar = () => {
                     </svg>
             <p className="ml-1 text-[25px] font-bold">Creativo.</p>
             </div>
-            <div className="hidden w-1/3 text-center sm:flex gap-12">
+            <div className="hidden w-1/3 text-center md:flex gap-12">
                 <p>Home</p>
                 <p>About Us</p>
                 <p>Portfolio</p>
@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
 
             <button
-                className="menu-toggle sm:hidden"
+                className="menu-toggle md:hidden"
                 onClick={() => setShowNav(!showNav)}
             >
                 {showNav ? (
@@ -36,7 +36,7 @@ const Navbar = () => {
             </button>
         </div>
             {showNav && (
-                <div className="sm:hidden flex flex-col w-[100%] border-b-2 border-gray-300 text-center py-6 justify-center">
+                <div className="md:hidden flex flex-col w-[100%] border-b-2 border-gray-300 text-center py-6 justify-center">
                     <p className="py-2 w-[100%] hover:font-bold">Home</p>
                     <p className="py-2 w-[100%] hover:font-bold">About Us</p>
                     <p className="py-2 w-[100%] hover:font-bold">Portfolio</p>
